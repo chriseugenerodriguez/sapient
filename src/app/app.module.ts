@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // PAGES
-import { PagesModule } from './modules/pages.module';
+import { HomeModule } from './modules/home/home.module';
 
 // SHARED
 import { SharedModule } from './shared/shared.module';
@@ -18,9 +18,15 @@ import { AppRoutingModule } from './app.routing.module';
   ],
   imports: [
     BrowserModule,
-    SharedModule,
-    PagesModule,
-    AppRoutingModule
+
+    // ROUTING
+    AppRoutingModule,
+
+    // PAGES
+    HomeModule,
+
+    // SHARED
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
