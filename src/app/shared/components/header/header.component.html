@@ -1,25 +1,30 @@
 <header>
-  <section class="header__top-section">
-    <img src="../../../../assets/img/axiom-logo-main.png" alt="Axiom Logo" />
+  <div class="container">
+    <div class="row">
+      <section class="header__top-section">
+        <img src="../../../../assets/img/axiom-logo-main.png" alt="Axiom Logo" />
 
-    <div class="header__top__menu">
-      <input type="text" placeholder="Search for Gear" />
-      <img class="search-icon" src="../assets/images/search-icon.png"/>
+        <div class="header__top__menu">
+          <div class="header__top__menu-search">
+            <input type="text" placeholder="Search for Gear" />
+            <img class="search-icon" src="../../../../assets/img/search-icon.png" />  
+          </div>
 
-      <div class="header__top__menu__icons">
-        <ul class="header__top__menu__icons-social">
-          <li class="header__top__menu__icons-social-fb"><a><img src="../assets/images/fb-icon.png"/></a></li>
-          <li class="header__top__menu__icons-social-tw"><a><img src="../assets/images/twitter-icon.png"/></a></li>
-        </ul>
+          <div class="header__top__menu__icons">
+            <ul class="header__top__menu__icons-social">
+              <li class="header__top__menu__icons-social-fb"><a><img src="../../../../assets/img/fb-icon.png" /></a></li>
+              <li class="header__top__menu__icons-social-tw"><a><img src="../../../../assets/img/twitter-icon.png" /></a></li>
+            </ul>
 
-        <ul class="header__top__menu__icons-links">
-          <li><a>My Account</a></li>
-          <li><a>Cart</a></li>
-          <li><a>Logout</a></li>
-        </ul>
-      </div>
+            <ul class="header__top__menu__icons-links">
+              <li><a>My Account</a></li>
+              <li><a>Cart</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <app-header-menu></app-header-menu>
     </div>
-  </section>
-
-  <app-header-menu></app-header-menu>
+  </div>
 </header>

@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { ProductDetailsModule } from './modules/product-details/product-details.module';
 
 // SHARED
-import { SharedModule } from './shared/shared.module';
+import { HeaderModule } from './shared/components/header/header.module';
+import { FooterModule } from './shared/components/footer/footer.module';
 
 // ROUTING
 import { AppRoutingModule } from './app.routing.module';
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app.routing.module';
     ProductDetailsModule,
 
     // SHARED
-    SharedModule
+    HeaderModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
