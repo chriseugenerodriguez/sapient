@@ -1,10 +1,10 @@
 <nav class="header__menu">
   <div class="container">
     <div class="row">
-      <ul>
+      <ul class="header__menu-container">
         <li class="header__menu__links" *ngFor="let a of menu">
           <a>
-            {{a.parent}} <img *ngIf="a.sub.length" src="../../../../../assets/svg/expand_more-24px.svg" />
+            {{a.parent}} <img *ngIf="a.sub.length" src="../../../../../assets/img/carot-down.png" />
           </a>
 
           <ul class="header__menu__links-sub" *ngIf="a.sub.length">
