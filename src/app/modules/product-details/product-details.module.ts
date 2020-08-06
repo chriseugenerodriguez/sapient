@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Pages
-import { HomeComponent } from './home.component';
+import { ProductDetailsComponent } from './product-details.component';
 
 // ROUTER
 import { RouterModule, Routes } from '@angular/router';
 
 // ROUTES
 export const ROUTES: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' }
+  { path: '', component: ProductDetailsComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -18,13 +18,13 @@ export const ROUTES: Routes = [
     RouterModule.forChild(ROUTES)
   ],
   declarations: [
-    HomeComponent
+    ProductDetailsComponent
   ],
   exports: [
-    HomeComponent
+    ProductDetailsComponent
   ],
   entryComponents: [
-    HomeComponent
+    ProductDetailsComponent
   ]
 })
-export class HomeModule { }
+export class ProductDetailsModule { }

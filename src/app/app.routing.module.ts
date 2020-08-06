@@ -5,7 +5,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 // LAZY ROUTES
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) }
+  { path: '', loadChildren: () => import('./modules/product-details/product-details.module').then(m => m.ProductDetailsModule) }
 ];
 
 @NgModule({

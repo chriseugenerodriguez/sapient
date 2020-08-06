@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // PAGES
-import { HomeModule } from './modules/home/home.module';
+import { ProductDetailsModule } from './modules/product-details/product-details.module';
 
 // SHARED
 import { SharedModule } from './shared/shared.module';
@@ -23,7 +23,7 @@ import { AppRoutingModule } from './app.routing.module';
     AppRoutingModule,
 
     // PAGES
-    HomeModule,
+    ProductDetailsModule,
 
     // SHARED
     SharedModule
