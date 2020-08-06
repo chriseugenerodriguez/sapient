@@ -1,0 +1,46 @@
+:host {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  .footer__menu {
+    margin: 0px;
+    padding: 0px;
+
+    &-links {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 0 0 10px;
+
+      &:after {
+        content: '|';
+        padding-left: 10px;
+        color: #fff;
+        display: inline;
+      }
+
+      a {
+        color: #fff;
+        cursor: pointer;
+      }
+
+      &:nth-child(n+5) {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:nth-child(5n) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(6n) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

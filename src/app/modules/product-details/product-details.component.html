@@ -1,3 +1,45 @@
-<p>
-  home works!
-</p>
+<section class="product__details">
+
+</section>
+<section class="product__details-info">
+
+</section>
+<section class="product__details__review">
+  <div class="container">
+    <div class="row">
+      <div class="product__details__review-header">
+        <h3>Reviews</h3>
+        <a (click)="openModal(template)">Write a Review on this product</a>
+      </div>
+      <img src="../../../assets/img/reviews.jpg" alt="reviews" />
+
+    </div>
+  </div>
+</section>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Submit a Review</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-body__rating">
+      Please Rate the <strong>Tough Mojo Jacket</strong>
+
+      <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" (onHover)="hoveringOver($event)"
+        (onLeave)="resetStar()" [titles]="['one','two','three']"></rating>
+    </div>
+
+    <div class="modal-body__title">
+      Review Title
+      <input type="text" />
+    </div>
+
+    <textarea placeholder="- Write your review here -"></textarea>
+  </div>
+  <div class="modal-footer">
+    <button type="submit">Submit Review</button>
+  </div>
+</ng-template>

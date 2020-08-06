@@ -4,8 +4,15 @@ import { CommonModule } from '@angular/common';
 // Pages
 import { ProductDetailsComponent } from './product-details.component';
 
+// BOOTSTRAP
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { RatingModule } from 'ngx-bootstrap/rating';
+
 // ROUTER
 import { RouterModule, Routes } from '@angular/router';
+
+// FORMS
+import { FormsModule } from '@angular/forms';
 
 // ROUTES
 export const ROUTES: Routes = [
@@ -15,7 +22,10 @@ export const ROUTES: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+    ModalModule.forRoot(),
+    RatingModule.forRoot(),
+    FormsModule
   ],
   declarations: [
     ProductDetailsComponent
