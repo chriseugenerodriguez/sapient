@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
+// COMPONENT
 import { AppComponent } from './app.component';
 
 // PAGES
@@ -19,6 +21,7 @@ import { AppRoutingModule } from './app.routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
 
     // ROUTING
     AppRoutingModule,

@@ -5,6 +5,9 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
 import { HeaderMenuComponent } from './menu/menu.component';
 
+// SERVICES
+import { HeaderService } from '../../services/header/header.service';
+
 @NgModule({
   imports: [
     CommonModule
@@ -20,6 +23,9 @@ import { HeaderMenuComponent } from './menu/menu.component';
   entryComponents: [
     HeaderComponent,
     HeaderMenuComponent
+  ],
+  providers: [
+    HeaderService
   ]
 })
 export class HeaderModule { }

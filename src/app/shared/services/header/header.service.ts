@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class ServicesService {
+import { Http } from '@angular/http';
+import { Observable } from 'rxjs/internal/Observable';
 
-  constructor() { }
+@Injectable()
+export class HeaderService {
+  constructor(private http: Http) {
+  }
+
+  public getJSON(): Observable<any> {
+    return this.http.get('assets/json/menu.json');
+  }
 }

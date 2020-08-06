@@ -1,17 +1,21 @@
 <nav class="header__menu">
-  <ul>
-    <li class="header__menu__links" *ngFor="let a of menu">
-      <a>
-        {{a.parent}} <img *ngIf="a.sub.length" src="../../../../../assets/svg/expand_more-24px.svg" />
-      </a>
-
-      <ul class="header__menu__links-sub" *ngIf="a.sub.length">
-        <li *ngFor="let b of a.sub">
+  <div class="container">
+    <div class="row">
+      <ul>
+        <li class="header__menu__links" *ngFor="let a of menu">
           <a>
-            {{b.name}}
+            {{a.parent}} <img *ngIf="a.sub.length" src="../../../../../assets/svg/expand_more-24px.svg" />
           </a>
+
+          <ul class="header__menu__links-sub" *ngIf="a.sub.length">
+            <li *ngFor="let b of a.sub">
+              <a>
+                {{b.name}}
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 </nav>
